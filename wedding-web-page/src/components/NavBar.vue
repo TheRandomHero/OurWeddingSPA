@@ -1,7 +1,14 @@
 <template>
     <v-container fluid>
-        <v-navigation-drawer permanent app>
-            <v-list>
+        <v-navigation-drawer app>
+            <v-list nav class="pa-0">
+                <div class="drawer-header">
+                    <router-link to="/">
+                        <p>Melinda</p>
+                            <span>És</span>
+                        <p>Attila</p>
+                    </router-link>
+                </div>
                 <v-list-item v-for="(item,i) in navItems" :key="i" router :to="item.route">
                     <v-list-item-content>
                         <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -26,5 +33,10 @@ export default {
 }
 </script>
 <style scoped>
-
+.drawer-header{
+    display: inline;
+    background-color: brown;
+    padding: 0;
+    margin: 0;
+}
 </style>

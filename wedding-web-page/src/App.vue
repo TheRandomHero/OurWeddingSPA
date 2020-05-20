@@ -1,7 +1,9 @@
 <template>
   <v-app>
   <nav-drawer/>
-  <router-view></router-view>
+    <v-content>
+      <router-view class="view"></router-view>
+    </v-content>
   </v-app>
 </template>
 
@@ -19,3 +21,9 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+.view{
+  display:relati;
+}
+</style>
