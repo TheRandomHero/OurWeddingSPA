@@ -1,8 +1,21 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+  <nav-drawer/>
+  <router-view></router-view>
+  </v-app>
 </template>
 
-<style lang="scss">
-</style>
+<script>
+import navBar from './components/NavBar'
+export default {
+  name: 'App',
+
+  components: {
+    navDrawer: navBar
+  },
+
+  data: () => ({
+    //
+  })
+}
+</script>
