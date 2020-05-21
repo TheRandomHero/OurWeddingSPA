@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-navigation-drawer app>
+        <v-navigation-drawer app permanent>
             <v-list nav class="pa-0">
                 <div class="drawer-header">
                     <router-link to="/">
@@ -34,9 +34,6 @@ export default {
 </script>
 <style scoped>
 .drawer-header{
-    display: inline;
-    background-color: brown;
-    padding: 0;
-    margin: 0;
+    background: brown;
 }
 </style>
