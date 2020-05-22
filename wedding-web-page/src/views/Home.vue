@@ -3,17 +3,13 @@
     <div class="home">
       <img width="100%" src="../assets/homepage/fp-picture4.png">
     </div>
-    <v-row>
-      <v-col>
-        <p>2020.</p>
-        <p>szeptember 26.</p>
+    <v-row justify="center">
+      <p>Visszaszámlás</p>
+    </v-row>
+    <v-row justify="center">
       <div>
         <Countdown end="September 26, 2020"></Countdown>
       </div>
-      </v-col>
-      <v-col>
-        <p>Tandari Tanya, Martonos</p>
-      </v-col>
     </v-row>
     <v-row>
       <v-col cols="8" offset="2">
