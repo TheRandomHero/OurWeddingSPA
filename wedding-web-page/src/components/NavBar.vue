@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-navigation-drawer app permanent>
+        <v-navigation-drawer app permanent width="350" src="./../assets/ring.jpg">
             <v-list nav class="pa-0">
                 <div class="drawer-header">
                     <router-link to="/">

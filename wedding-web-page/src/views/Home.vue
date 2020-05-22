@@ -1,10 +1,7 @@
 <template>
-  <v-container fluid>
-    <v-subheader>
-      <p>Melinda és Attila</p>
-    </v-subheader>
+  <v-container fluid pa-0 ma-0>
     <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
+      <img width="100%" src="../assets/homepage/fp-picture4.png">
     </div>
     <div>
       <Countdown end="September 26, 2020"></Countdown>
@@ -21,11 +18,11 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 .home{
-  text-align: center;
+  padding: 0;
 }
-
 #clock{
   border-top: 0;
   background: #f7e7ce;
