@@ -17,9 +17,9 @@ export default {
   data () {
     return {
       navItems: [
-        { text: 'Rólunk', route: '/aboutUs' },
         { text: 'Galéria', route: '/gallery' },
-        { text: 'Információ', route: '/info' }
+        { text: 'Információ', route: '/info' },
+        { text: 'Program', route: '/program'}
       ]
     }
   }

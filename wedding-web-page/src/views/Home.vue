@@ -8,7 +8,7 @@
     </v-row>
     <v-row justify="center">
       <div>
-        <Countdown end="September 26, 2020"></Countdown>
+        <Countdown end="September 26, 2020 12:00"></Countdown>
       </div>
     </v-row>
     <v-row>
