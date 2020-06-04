@@ -29,27 +29,11 @@
 import Countdown from './../components/Countdown'
 import axios from 'axios'
 export default {
-  data() {
-    return {
-     thumb: {
-       url: ''
-     },
-     thumbs: []
-    }
-  },
+  
   components: {
     Countdown
   },
-  created: function() {
-    axios.get('https://res.cloudinary.com/weddingphotos/image/list/kreativ.json').then((res) => {
-      this.thumbs = res.data.resources.map(t => {
-        return {
-          publicId: t.public_id,
-          url: `https://res.cloudinary.com/weddingphotos/image/upload/v${t.version}/${t.public_id}.jpg`
-        }
-      })
-    })
-  },
+  
 }
 </script>
 

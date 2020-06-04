@@ -5,6 +5,7 @@ import vuetify from './plugins/vuetify'
 import vueResource from 'vue-resource'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import Cloudinary, { CldImage } from 'cloudinary-vue'
+import Lightbox from 'vue-easy-lightbox'
 
 require('dotenv').config()
 
@@ -27,6 +28,9 @@ Vue.use(VueGoogleMaps, {
 
   }
 })
+
+Vue.use(Lightbox)
+
 
 new Vue({
   router,

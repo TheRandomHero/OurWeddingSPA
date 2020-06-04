@@ -16,6 +16,12 @@ const routes = [
     component: () => import('../views/Gallery.vue')
   },
   {
+    path: '/gallery/:group',
+    name: 'GallerySlide',
+    props: true,
+    component: () => import('../views/GallerySlide.vue')
+  },
+  {
     path: '/info',
     name: 'Information',
     component: () => import('../views/Information.vue')
