@@ -61,7 +61,7 @@
                         <div >
                             <h3>Mulatság helyszíne</h3>
                             <p>Tandari tanya
-                                Slatina 2 
+                                Slatina 2
                                <br>
                                 Martonos, Szerbia
                             </p>
@@ -88,23 +88,23 @@
 </template>
 <script>
 export default {
-    data(){
-        return{
-            templomCenter:{ lat: 46.065611, lng: 20.057744 },
-            templom :[
+    data () {
+        return {
+            templomCenter: { lat: 46.065611, lng: 20.057744 },
+            templom: [
                 {
                     position: { lat: 46.065611, lng: 20.057744 }
                 }
             ],
             tanyaCenter: { lat: 46.107705, lng: 20.018889 },
-            tanya :[
+            tanya: [
                 {
                     position: { lat: 46.107705, lng: 20.018889 }
-                },
+                }
             ]
         }
-    },
-    
+    }
+
 }
 </script>
 <style scoped>

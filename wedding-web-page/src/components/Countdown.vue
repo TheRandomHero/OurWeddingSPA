@@ -26,13 +26,13 @@ export default {
   props: {
     deadline: {
       type: String
-      },
-     end: {
-        type: String
-      },
-      stop: {
-        type: Boolean
-      }
+        },
+        end: {
+            type: String
+        },
+        stop: {
+            type: Boolean
+        }
     },
     data () {
         return {
@@ -45,49 +45,49 @@ export default {
         if (!this.deadline && !this.end) {
             throw new Error("Missing props 'deadline' or 'end'")
     }
-            let endTime = this.deadline ? this.deadline : this.end
+        let endTime = this.deadline ? this.deadline : this.end
     this.date = Math.trunc(Date.parse(endTime.replace(/-/g, '/')) / 1000)
     if (!this.date) {
-                throw new Error("Invalid props value, correct the 'deadline' or 'end'")
+            throw new Error("Invalid props value, correct the 'deadline' or 'end'")
     }
-            interval = setInterval(() => {
-                this.now = Math.trunc((new Date()).getTime() / 1000)
+        interval = setInterval(() => {
+            this.now = Math.trunc((new Date()).getTime() / 1000)
     }, 1000)
   },
-        computed: {
-            seconds () {
-                return Math.trunc(this.diff) % 60
-            },
-            minutes () {
-                return Math.trunc(this.diff / 60) % 60
-            },
-            hours () {
-                return Math.trunc(this.diff / 60 / 60) % 24
-            },
-            days () {
-                return Math.trunc(this.diff / 60 / 60 / 24)
-            }
+    computed: {
+        seconds () {
+            return Math.trunc(this.diff) % 60
         },
-        watch: {
-            now (value) {
-                this.diff = this.date - this.now
+        minutes () {
+            return Math.trunc(this.diff / 60) % 60
+        },
+        hours () {
+            return Math.trunc(this.diff / 60 / 60) % 24
+        },
+        days () {
+            return Math.trunc(this.diff / 60 / 60 / 24)
+        }
+    },
+    watch: {
+        now (value) {
+            this.diff = this.date - this.now
       if (this.diff <= 0 || this.stop) {
-                    this.diff = 0
+                this.diff = 0
         // Remove interval
         clearInterval(interval)
       }
+        }
+    },
+    filters: {
+        twoDigits (value) {
+            if (value.toString().length <= 1) {
+                return '0' + value.toString()
             }
-        },
-        filters: {
-            twoDigits (value) {
-                if (value.toString().length <= 1) {
-                    return '0' + value.toString()
-                }
-                return value.toString()
-            }
-        },
-        destroyed () {
-            clearInterval(interval)
+            return value.toString()
+        }
+    },
+    destroyed () {
+        clearInterval(interval)
   }
 }
 </script>

@@ -25,7 +25,7 @@
                     <hr class="custom-line">
                     <p>17:30
                         <br>
-                        Gratuláció fogadása 
+                        Gratuláció fogadása
                     </p>
                     <hr class="custom-line">
                     <p>18:00
@@ -54,7 +54,7 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>

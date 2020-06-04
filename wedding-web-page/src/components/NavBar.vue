@@ -1,6 +1,6 @@
 <template>
     <v-navigation-drawer app permanent width="350" height="100%">
-        <v-img src="./../assets/ring.jpg"  class="drawer-img" height="100%" width="100%"> 
+        <v-img src="./../assets/ring.jpg"  class="drawer-img" height="100%" width="100%">
         <v-list nav class="pa-0">
             <v-list-item v-for="(item,i) in navItems" :key="i" router :to="item.route">
                 <v-list-item-content>
@@ -17,9 +17,10 @@ export default {
   data () {
     return {
       navItems: [
+        { text: 'Főoldal', route: '/' },
         { text: 'Galéria', route: '/gallery' },
         { text: 'Információ', route: '/info' },
-        { text: 'Program', route: '/program'}
+        { text: 'Program', route: '/program' }
       ]
     }
   }

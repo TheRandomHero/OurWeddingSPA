@@ -24,6 +24,6 @@ export default {
 
 <style scoped>
 .view{
-  display:relati;
+  display:relative;
 }
 </style>
