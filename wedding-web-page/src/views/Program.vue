@@ -2,6 +2,11 @@
     <v-container>
         <v-row align="center">
             <v-col cols="4" offset="4" >
+                <v-row justify="center">
+                <div class="count-down">
+                    <Countdown end="September 26, 2020 12:00"></Countdown>
+                </div>
+                </v-row>
                 <div class="program-details">
                     <p>13:00
                         <br>
@@ -53,11 +58,16 @@
     </v-container>
 </template>
 <script>
+import Countdown from './../components/Countdown'
 export default {
-
+    components:{
+        Countdown
+    }
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps');
+
 .custom-line{
     height: 25px;
     background-size: cover;
@@ -68,5 +78,12 @@ export default {
 
 .program-details{
     text-align: center;
+    font-family: 'Elsie Swash Caps';
+    font-size: 1.5rem;
 }
+
+.count-down{
+    font-family: 'Elsie Swash Caps';
+}
+
 </style>

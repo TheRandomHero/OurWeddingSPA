@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container fluid fill-height class="information-page">
         <v-row justify="center">
             <p>Információ</p>
         </v-row>
@@ -31,31 +31,7 @@
                                 @click="center=m.position"/>
                         </GmapMap>
                     </div>
-                     <div>
-                        <v-img width="400" src="./../assets/varoshaza.jpg" />
-                        <div class="information">
-                            <h3>Polgári ceremónia helyszíne</h3>
-                            <p>
-                                Iskola tér 1,
-                                <br>
-                                Magyarkanizsa, Szerbia
-                            </p>
-                        </div>
-                        <GmapMap
-                            :center="templomCenter"
-                            :zoom="14"
-                            map-type-id="terrain"
-                            style="width: 400px; height: 300px"
-                            >
-                            <GmapMarker
-                                :key="index"
-                                v-for="(m, index) in templom"
-                                :position="m.position"
-                                :clickable="true"
-                                :draggable="true"
-                                @click="center=m.position"/>
-                        </GmapMap>
-                    </div>
+                     
                     <div class="information">
                         <v-img src="./../assets/tandari2.jpg" width="400"/>
                         <div >
@@ -108,11 +84,12 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps');
+.information-page{
+    font-family: 'Elsie Swash Caps';
+}
 
 .information{
     text-align: center;
-}
-.information h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 </style>

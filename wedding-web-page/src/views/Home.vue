@@ -3,22 +3,12 @@
     <div class="home">
       <img width="100%" src="../assets/homepage/fp-picture4.png">
     </div>
-    <v-row justify="center">
-      <p>Visszaszámlás</p>
-    </v-row>
-    <v-row justify="center">
-      <div>
-        <Countdown end="September 26, 2020 12:00"></Countdown>
-      </div>
-    </v-row>
     <v-row>
       <v-col cols="8" offset="2">
         <v-row justify="space-between">
           <v-btn class="mx-2" @click="api()">Rólunk</v-btn>
           <v-btn class="mx-2" href="/info">További információ</v-btn>
           <v-btn class="mx-2" href="/gallery">Galéria megtekintése</v-btn>
-          <cld-image publicId="Lagzi/lagzis_ids2tq.jpg" >
-          </cld-image>
         </v-row>
       </v-col>
     </v-row>
@@ -26,13 +16,7 @@
 </template>
 
 <script>
-import Countdown from './../components/Countdown'
-import axios from 'axios'
 export default {
-  
-  components: {
-    Countdown
-  },
   
 }
 </script>
