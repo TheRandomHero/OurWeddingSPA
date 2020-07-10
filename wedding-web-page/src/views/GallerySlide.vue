@@ -1,9 +1,9 @@
 <template>
-    <v-container fluid>   
+    <v-container fluid fill-height class="gallery-slide">   
       <v-row>
           <v-col>
               <v-row justify="space-around">
-                  <v-card v-for="(url,index) in images" :key="index" height="250">
+                  <v-card v-for="(url,index) in images" :key="index" height="250" class="image-cards">
                       <img :src="url" alt="" @click="show(index)" height="250">
                   </v-card>
                   <VueEasyLightbox
@@ -60,5 +60,10 @@ export default {
 </script>
 
 <style scoped>
-
+  .gallery-slide{
+    background-color: #fcf8f5;
+  }
+  .image-cards{
+    margin: 20px;
+  }
 </style>

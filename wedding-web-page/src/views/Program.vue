@@ -1,10 +1,10 @@
 <template>
-    <v-container>
+    <v-container fluid fill-height style="background-color: #fcf8f5;">
         <v-row align="center">
             <v-col cols="4" offset="4" >
                 <v-row justify="center">
                 <div class="count-down">
-                    <Countdown end="September 26, 2020 12:00"></Countdown>
+                    <Countdown end="September 26, 2020 13:00"></Countdown>
                 </div>
                 </v-row>
                 <div class="program-details">
@@ -23,24 +23,24 @@
                         Polgári ceremónia
                     </p>
                     <hr class="custom-line">
-                    <p>17:00
-                        <br>
-                        Templomi ceremónia
-                    </p>
-                    <hr class="custom-line">
-                    <p>17:30
+                    <p>16:20
                         <br>
                         Gratuláció fogadása
                     </p>
                     <hr class="custom-line">
-                    <p>18:00
+                    <p>16:40
                         <br>
-                        Csokor dobás
+                        Csoportkép készítés
                     </p>
                     <hr class="custom-line">
-                    <p>18:05
+                    <p>18:00
                         <br>
-                        Fotózkodás
+                        Templomi ceremónia
+                    </p>
+                    <hr class="custom-line">
+                    <p>18:30
+                        <br>
+                        Csokor dobás
                     </p>
                     <hr class="custom-line">
                     <p>20:00

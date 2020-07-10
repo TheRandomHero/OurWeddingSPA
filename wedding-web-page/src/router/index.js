@@ -7,23 +7,23 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Főoldal',
     component: Home
   },
   {
     path: '/gallery',
-    name: 'Gallery',
+    name: 'Galéria',
     component: () => import('../views/Gallery.vue')
   },
   {
     path: '/gallery/:group',
-    name: 'GallerySlide',
+    name: 'Fotók',
     props: true,
     component: () => import('../views/GallerySlide.vue')
   },
   {
     path: '/info',
-    name: 'Information',
+    name: 'Helyszínek',
     component: () => import('../views/Information.vue')
   },
   {

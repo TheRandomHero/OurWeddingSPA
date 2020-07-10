@@ -3,15 +3,7 @@
     <div class="home">
       <img width="100%" src="../assets/homepage/fp-picture4.png">
     </div>
-    <v-row>
-      <v-col cols="8" offset="2">
-        <v-row justify="space-between">
-          <v-btn class="mx-2" @click="api()">Rólunk</v-btn>
-          <v-btn class="mx-2" href="/info">További információ</v-btn>
-          <v-btn class="mx-2" href="/gallery">Galéria megtekintése</v-btn>
-        </v-row>
-      </v-col>
-    </v-row>
+    
   </v-container>
 </template>
 

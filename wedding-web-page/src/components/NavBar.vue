@@ -1,5 +1,6 @@
 <template>
-    <v-navigation-drawer  app :permanent="$vuetify.breakpoint.mdAndUp" width="350" height="100%">
+<v-container fluid class="header-container">
+    <v-navigation-drawer  v-model="drawer" app :permanent="$vuetify.breakpoint.lgAndUp" width="350" height="100%">
         <v-img src="./../assets/ring.jpg"  class="drawer-img" height="100%" width="100%">
         <v-list nav class="pa-0">
             <v-list-item v-for="(item,i) in navItems" :key="i" router :to="item.route">
@@ -10,17 +11,28 @@
         </v-list>
         </v-img>
     </v-navigation-drawer>
+  <v-content>
+    <v-toolbar style="background-color : #fcf8f5; border-style:solid; border-color: #d4af37; border-width: 4px" flat>
+      <v-spacer></v-spacer>
+      <v-toolbar-title class="header-content">{{ this.$route.name }}</v-toolbar-title>
+      <v-app-bar-nav-icon @click="drawer = !drawer" class="d-lg-none"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+    </v-toolbar>
+  </v-content>
+</v-container>
+
 </template>
 
 <script>
 export default {
   data () {
     return {
+      drawer: this.$vuetify.breakpoint.mdAndUp,
       navItems: [
         { text: 'Főoldal', route: '/' },
+        { text: 'Program', route: '/program' },
+        { text: 'Helyszínek', route: '/info' },
         { text: 'Galéria', route: '/gallery' },
-        { text: 'Információ', route: '/info' },
-        { text: 'Program', route: '/program' }
       ]
     }
   }
@@ -34,5 +46,16 @@ export default {
   text-align: center;
   font-size: 3rem;
 }
+
+.header-content{
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+  font-weight: 1000;
+  
+}
+.header-container{
+  background-color:#fcf8f5;
+}
+
 
 </style>

@@ -1,14 +1,11 @@
 <template>
     <v-container fluid fill-height class="information-page">
-        <v-row justify="center">
-            <p>Információ</p>
-        </v-row>
         <v-row>
             <v-col>
                 <v-row justify="space-around">
-                    <div>
+                    <div class="information">
                         <v-img width="400" src="./../assets/templom2.jpg" />
-                        <div class="information">
+                        <div >
                             <h3>Templomi ceremónia helyszíne</h3>
                             <p>
                                 Iskola tér 1,
@@ -31,14 +28,14 @@
                                 @click="center=m.position"/>
                         </GmapMap>
                     </div>
-                     
+                        
                     <div class="information">
                         <v-img src="./../assets/tandari2.jpg" width="400"/>
-                        <div >
+                        <div>
                             <h3>Mulatság helyszíne</h3>
                             <p>Tandari tanya
                                 Slatina 2
-                               <br>
+                                <br>
                                 Martonos, Szerbia
                             </p>
                         </div>
@@ -87,9 +84,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps');
 .information-page{
     font-family: 'Elsie Swash Caps';
+    background-color: #fcf8f5;
 }
 
 .information{
     text-align: center;
+    margin: 40px;
+    border-color: #d4af37;
+    border-style: solid;
 }
 </style>
