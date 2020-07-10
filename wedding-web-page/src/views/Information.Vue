@@ -85,11 +85,12 @@ export default {
 .information-page{
     font-family: 'Elsie Swash Caps';
     background-color: #fcf8f5;
+    overflow: hidden;
 }
 
 .information{
     text-align: center;
-    margin: 40px;
+    margin: 25px;
     border-color: #d4af37;
     border-style: solid;
 }

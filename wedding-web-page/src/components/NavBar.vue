@@ -8,6 +8,11 @@
                     <v-list-item-title class="nav-draw">{{ item.text }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
+            <v-list-item>
+              <v-list-item-content class="nav-draw">
+                <i @click="drawer = !drawer" style="text-alig: center" class="fa fa-times" aria-hidden="true"></i>
+              </v-list-item-content>
+            </v-list-item>
         </v-list>
         </v-img>
     </v-navigation-drawer>

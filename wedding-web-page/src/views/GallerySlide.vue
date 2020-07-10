@@ -3,8 +3,8 @@
       <v-row>
           <v-col>
               <v-row justify="space-around">
-                  <v-card v-for="(url,index) in images" :key="index" height="250" class="image-cards">
-                      <img :src="url" alt="" @click="show(index)" height="250">
+                  <v-card v-for="(url,index) in images" :key="index" height="250" class="image-cards" max-width="400">
+                      <img :src="url" @click="show(index)" height="250" style="max-width:400px;">
                   </v-card>
                   <VueEasyLightbox
                   :visible="visible"
@@ -62,6 +62,7 @@ export default {
 <style scoped>
   .gallery-slide{
     background-color: #fcf8f5;
+    overflow: hidden;
   }
   .image-cards{
     margin: 20px;

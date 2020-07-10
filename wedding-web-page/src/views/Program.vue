@@ -1,7 +1,7 @@
 <template>
     <v-container fluid fill-height style="background-color: #fcf8f5;">
         <v-row align="center">
-            <v-col cols="4" offset="4" >
+            <v-col class="col-lg-4 offset-lg-4 col-sm-12" >
                 <v-row justify="center">
                 <div class="count-down">
                     <Countdown end="September 26, 2020 13:00"></Countdown>

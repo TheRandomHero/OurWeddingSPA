@@ -6,6 +6,7 @@ import vueResource from 'vue-resource'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import Cloudinary, { CldImage } from 'cloudinary-vue'
 import Lightbox from 'vue-easy-lightbox'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 require('dotenv').config()
 
@@ -35,5 +36,8 @@ Vue.use(Lightbox)
 new Vue({
   router,
   vuetify,
+  icons: {
+    iconfont: 'fa',
+  },
   render: h => h(App)
 }).$mount('#app')
