@@ -1,14 +1,14 @@
 <template>
 <v-container fluid class="header-container">
     <v-navigation-drawer  v-model="drawer" app :permanent="$vuetify.breakpoint.lgAndUp" width="350" height="100%">
-        <v-img src="./../assets/ring.jpg"  class="drawer-img" height="100%" width="100%">
+        <v-img src="./../assets/engageRings.jpg" height="100%">
         <v-list nav class="pa-0">
             <v-list-item v-for="(item,i) in navItems" :key="i" router :to="item.route">
                 <v-list-item-content>
                     <v-list-item-title class="nav-draw">{{ item.text }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item>
+            <v-list-item v-if="this.$vuetify.breakpoint.mdAndDown">
               <v-list-item-content class="nav-draw">
                 <i @click="drawer = !drawer" style="text-alig: center" class="fa fa-times" aria-hidden="true"></i>
               </v-list-item-content>
@@ -17,7 +17,7 @@
         </v-img>
     </v-navigation-drawer>
   <v-content>
-    <v-toolbar style="background-color : #fcf8f5; border-style:solid; border-color: #d4af37; border-width: 4px" flat>
+    <v-toolbar style="background-color : #fcf8f5;" flat>
       <v-spacer></v-spacer>
       <v-toolbar-title class="header-content">{{ this.$route.name }}</v-toolbar-title>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="d-lg-none"></v-app-bar-nav-icon>

@@ -1,8 +1,16 @@
 <template>
   <v-container fluid fill-height pa-0 ma-0>
-        <div >
-          <img v-bind:class="[screenSize ? 'mobile-home' : 'home']" src="../assets/homepage/main3.png">
-        </div>
+    <v-row>
+      <v-col>
+        <v-row justify="center">
+          <div >
+            <img v-bind:class="[screenSize ? 'mobile-home' : 'home']" src="../assets/homepage/main3.png">
+          </div>
+
+        </v-row>
+      </v-col>
+
+    </v-row>
   </v-container>
 </template>
 
@@ -21,7 +29,9 @@ export default {
   .home{
     padding: 0;
     display: block;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .mobile-home{
