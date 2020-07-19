@@ -61,7 +61,6 @@ export default {
 
 <style scoped>
   .gallery-slide{
-    background-color: #fcf8f5;
     overflow: hidden;
   }
   .image-cards{

@@ -3,8 +3,8 @@
         <v-row>
             <v-col>
                 <v-row justify="space-around">
-                    <div class="information">
-                        <v-img width="400" src="./../assets/templom2.jpg" />
+                    <div class="information" v-bind:class="{'mobile-information' : screenSize}">
+                        <v-img src="./../assets/templom2.jpg" v-if="screenSize ? 'max-width=100%' : 'max-width=400'" />
                         <div >
                             <h3>Templomi ceremónia helyszíne</h3>
                             <p>
@@ -17,7 +17,7 @@
                             :center="templomCenter"
                             :zoom="14"
                             map-type-id="terrain"
-                            style="width: 400px; height: 300px"
+                            style="width: 100%; height: 300px"
                             >
                             <GmapMarker
                                 :key="index"
@@ -29,8 +29,8 @@
                         </GmapMap>
                     </div>
                         
-                    <div class="information">
-                        <v-img src="./../assets/tandari2.jpg" width="400"/>
+                    <div class="information" v-bind:class="{'mobile-information' : screenSize}">
+                        <v-img src="./../assets/tandari2.jpg" v-if="screenSize ? 'max-width=100%' : 'max-width=400'"/>
                         <div>
                             <h3>Mulatság helyszíne</h3>
                             <p>Tandari tanya
@@ -43,7 +43,7 @@
                             :center="tanyaCenter"
                             :zoom="12"
                             map-type-id="terrain"
-                            style="width: 400px; height: 300px"
+                            style="width: 100%; height: 300px"
                             >
                             <GmapMarker
                                 :key="index"
@@ -76,6 +76,11 @@ export default {
                 }
             ]
         }
+    },
+    computed:{
+        screenSize(){
+            return this.$vuetify.breakpoint.smAndDown
+        }
     }
 
 }
@@ -84,7 +89,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps');
 .information-page{
     font-family: 'Elsie Swash Caps';
-    background-color: #fcf8f5;
     overflow: hidden;
 }
 
@@ -94,4 +98,10 @@ export default {
     border-color: #d4af37;
     border-style: solid;
 }
+
+.mobile-information{
+    width: 100%;
+}
+
+
 </style>

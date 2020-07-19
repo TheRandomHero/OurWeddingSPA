@@ -1,7 +1,7 @@
 <template>
-<v-container fluid class="header-container">
+<v-container fluid>
     <v-navigation-drawer  v-model="drawer" app :permanent="$vuetify.breakpoint.lgAndUp" width="350" height="100%">
-        <v-img src="./../assets/engageRings.jpg" height="100%">
+        <v-img src="./../assets/engageRings.jpg" position="unset" height="100%">
         <v-list nav class="pa-0">
             <v-list-item v-for="(item,i) in navItems" :key="i" router :to="item.route">
                 <v-list-item-content>
@@ -17,7 +17,7 @@
         </v-img>
     </v-navigation-drawer>
   <v-content>
-    <v-toolbar style="background-color : #fcf8f5;" flat>
+    <v-toolbar flat>
       <v-spacer></v-spacer>
       <v-toolbar-title class="header-content">{{ this.$route.name }}</v-toolbar-title>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="d-lg-none"></v-app-bar-nav-icon>
@@ -57,9 +57,6 @@ export default {
   font-size: 3rem;
   font-weight: 1000;
   
-}
-.header-container{
-  background-color:#fcf8f5;
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid fill-height class="background">
+    <v-container fluid fill-height>
         <v-row >
             <v-col>
                 <v-row justify="space-around">
@@ -27,9 +27,6 @@ export default {
 }
 </script>
 <style scoped>
-    .background{
-        background-color: #fcf8f5;
-    }
     .gallery{
         text-align: center;
         font-family: 'Elsie Swash Caps';

@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid fill-height style="background-color: #fcf8f5;">
+    <v-container fluid fill-height>
         <v-row align="center">
             <v-col class="col-lg-4 offset-lg-4 col-sm-12" >
                 <v-row justify="center">
@@ -15,12 +15,12 @@
                     <hr class="custom-line">
                     <p>15:00
                         <br>
-                        Vendégvárás
+                        Vendégvárás / Tandari tanya /
                     </p>
                     <hr class="custom-line">
                     <p>16:00
                         <br>
-                        Polgári ceremónia
+                        Polgári ceremónia / Tandari tanya /
                     </p>
                     <hr class="custom-line">
                     <p>16:20
@@ -35,7 +35,7 @@
                     <hr class="custom-line">
                     <p>18:00
                         <br>
-                        Templomi ceremónia
+                        Templomi ceremónia / Szent Őrangyalok Templom /
                     </p>
                     <hr class="custom-line">
                     <p>18:30

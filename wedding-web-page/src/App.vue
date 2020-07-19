@@ -1,8 +1,10 @@
 <template>
   <v-app>
   <nav-drawer />
-    <v-content style=" background: #fcf8f5;">
-      <router-view class="view"></router-view>
+    <v-content>
+      <transition name="fade" mode="out-in">
+        <router-view class="view"></router-view>
+      </transition>
     </v-content>
   </v-app>
 </template>
@@ -25,5 +27,16 @@ export default {
 <style scoped>
 .view{
   display:relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+  transform: translateY(5em);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s ease;
 }
 </style>

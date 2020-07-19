@@ -17,7 +17,7 @@
                             ></v-text-field>
                             <span class="error help-block" ></span>
                             </div>
-                            <div class="text-danger" v-if="error"><p>Helytelen jelszó!</p></div>
+                            <div v-if="error"><p>Helytelen jelszó!</p></div>
                             <v-btn type="submit">Bejelentkezés</v-btn>
                         </v-form>
                     </v-row>
