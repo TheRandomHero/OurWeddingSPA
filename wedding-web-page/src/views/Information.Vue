@@ -4,7 +4,7 @@
             <v-col>
                 <v-row justify="space-around">
                     <div class="information" v-bind:class="{'mobile-information' : screenSize}">
-                        <v-img src="./../assets/templom2.jpg" v-if="screenSize ? 'max-width=100%' : 'max-width=400'" />
+                        <v-img src="./../assets/templom2.jpg" :width="screenSize? '100%' : '400px'" />
                         <div >
                             <h3>Templomi ceremónia helyszíne</h3>
                             <p>
@@ -30,7 +30,7 @@
                     </div>
                         
                     <div class="information" v-bind:class="{'mobile-information' : screenSize}">
-                        <v-img src="./../assets/tandari2.jpg" v-if="screenSize ? 'max-width=100%' : 'max-width=400'"/>
+                        <v-img src="./../assets/tandari2.jpg" :width="screenSize? '100%' : '400px'"/>
                         <div>
                             <h3>Mulatság helyszíne</h3>
                             <p>Tandari tanya
