@@ -12,6 +12,7 @@ const routes = [
     name: 'Főoldal',
     component: Home,
     meta: {
+      title: 'Melinda és Attila nagy napja',
       requiresAuth: true
     }
   },
@@ -20,6 +21,7 @@ const routes = [
     name: 'Galéria',
     component: () => import('../views/Gallery.vue'),
     meta: {
+      title: 'Melinda és Attila nagy napja',
       requiresAuth: true
     }
   },
@@ -29,6 +31,7 @@ const routes = [
     props: true,
     component: () => import('../views/GallerySlide.vue'),
     meta: {
+      title: 'Melinda és Attila nagy napja',
       requiresAuth: true
     }
   },
@@ -37,6 +40,7 @@ const routes = [
     name: 'Helyszínek',
     component: () => import('../views/Information.vue')
     ,meta: {
+      title: 'Melinda és Attila nagy napja',
       requiresAuth: true
     }
   },
@@ -45,6 +49,7 @@ const routes = [
     name: 'Program',
     component: () => import('../views/Program.vue')
     ,meta: {
+      title: 'Melinda és Attila nagy napja',
       requiresAuth: true
     }
   },

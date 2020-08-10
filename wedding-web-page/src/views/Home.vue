@@ -6,7 +6,7 @@
       <v-row>
         <v-col>
           <v-row justify="center">
-            <p>2020.
+            <p class="date">2020.
             Szeptember 26.</p>
           </v-row>
         </v-col>
@@ -25,11 +25,15 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Pattaya');
   .home{
     padding: 0;
     display: block;
     width: 100%;
   }
-
+.date{
+  font-family: 'Pattaya';
+  font-size: 2em;
+}
 
 </style>

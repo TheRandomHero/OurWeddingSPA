@@ -4,6 +4,7 @@
             <v-col class="col-lg-4 offset-lg-4 col-sm-12" >
                 <v-row justify="center">
                 <div class="count-down">
+                    <p class="cd-title">Visszaszámlálás:</p>
                     <Countdown end="September 26, 2020 13:00"></Countdown>
                 </div>
                 </v-row>
@@ -67,6 +68,7 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya');
 
 .custom-line{
     height: 25px;
@@ -85,5 +87,9 @@ export default {
 .count-down{
     font-family: 'Elsie Swash Caps';
 }
-
+.cd-title{
+    font-family: 'Pattaya';
+    font-size: 2em;
+    font-weight: 100;
+}
 </style>

@@ -15,6 +15,7 @@
     "core-js": "^3.6.4",
     "current-script-polyfill": "^1.0.0",
     "dotenv": "^8.2.0",
+    "firebase": "^7.17.1",
     "password-hash": "^1.2.2",
     "storage-helper": "^1.4.1",
     "vue": "^2.6.11",

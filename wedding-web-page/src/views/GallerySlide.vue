@@ -36,7 +36,8 @@ export default {
      }
 ,
      created: function() {
-    axios.get('https://res.cloudinary.com/weddingphotos/image/list/' + this.group +'.json').then((res) => {
+    axios.get('https://res.cloudinary.com/weddingphotos/image/list/' + this.group +'.json')
+    .then((res) => {
       this.images = res.data.resources.map(t => 
         
         `https://res.cloudinary.com/weddingphotos/image/upload/v${t.version}/${t.public_id}.jpg`

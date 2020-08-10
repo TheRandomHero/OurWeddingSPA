@@ -41,7 +41,7 @@ export default {
   methods: {
     validateBeforeSubmit () {
         var passwordHash = require('password-hash');
-        var hashedPassword = passwordHash.generate('atimeli')
+        var hashedPassword = passwordHash.generate(process.env.VUE_APP_LOGINPASSWORD)
       if (passwordHash.verify(this.password, hashedPassword)) {
         this.error = false
         storageHelper.setItem('user-password', hashedPassword)
