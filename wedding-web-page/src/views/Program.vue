@@ -5,7 +5,7 @@
                 <v-row justify="center">
                 <div class="count-down">
                     <p class="cd-title">Visszaszámlálás:</p>
-                    <Countdown end="September 26, 2020 13:00"></Countdown>
+                    <Countdown end="June 25, 2021 13:00"></Countdown>
                 </div>
                 </v-row>
                 <div class="program-details">
